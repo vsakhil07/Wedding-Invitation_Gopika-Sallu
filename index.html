@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ammmu+Sallu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    <style>
-      .slider {
-        width: 80%;
-        margin: auto;
-      }
-
-      .slider img {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="slider">
-      <div><img src="Ammu4.jpg"></div>
-      <div><img src="Photo1.jpg"></div>
-      <div><img src="Photo2.jpg"></div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.slider').slick({
-          autoplay: true,
-          autoplaySpeed: 3000,
-          arrows: false,
-          dots: true
-        });
-      });
-    </script>
-  </body>
+<head>
+	<title>Wedding Invitation</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #fff;
+			padding: 20px;
+			text-align: center;
+			border-bottom: 1px solid #ddd;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+		header h1 {
+			font-size: 36px;
+			margin: 0;
+			color: #333;
+			text-shadow: 1px 1px #fff;
+		}
+		.main {
+			padding-top: 100px;
+			text-align: center;
+		}
+		.invitation {
+			max-width: 800px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+		}
+		.invitation img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		.caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,0.5);
+			color: #fff;
+			padding: 10px;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			transition: all 0.5s ease;
+			opacity: 0;
+			transform: translateY(100%);
+		}
+		.invitation:hover .caption {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Our Wedding Invitation</h1>
+	</header>
+	<div class="main">
+		<div class="invitation">
+			<img src="Ammu4.jpg">
+			<div class="caption">Save the Date: May 18, 2023</div>
+		</div>
+		<div class="invitation">
+			<img src="Photo1.jpg">
+			<div class="caption">Ceremony: St. Mary's Church</div>
+		</div>
+		<div class="invitation">
+			<img src="Photo2.jpg">
+			<div class="caption">Reception: Hilton Hotel</div>
+		</div>
+	</div>
+</body>
 </html>

@@ -107,18 +107,15 @@
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
 	</script>
    	<script>
-      	$(document).ready(function()
-		{
-		$('.slider').slick
-			(
-			{
+      	$(document).ready
+		(function()
+		 {$('.slider').slick({
           		autoplay: true,
           		autoplaySpeed: 3000,
           		arrows: true,
           		dots: true
-        		}
-			);
-      		};
+        		});
+      		});
     	</script>
 </body>
 </html>
